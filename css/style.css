@@ -492,7 +492,6 @@ ol {
 
 .hero {
 	padding: 80px 0;
-    max-height: 100vh;
 }
 
 .hero__text {
@@ -719,48 +718,20 @@ ol {
 	width: 180px;
 }
 
-
-.filter__controls {
-	text-align: center;
-	margin-bottom: 40px;
+div#VenteIndexPage div#CadreVente{
+	padding : 50px 65px;
 }
 
-.filter__controls li {
-	list-style: none;
-	display: inline-block;
-	font-size: 13px;
-	text-transform: uppercase;
-	color: #8d8d8d;
-	font-weight: 700;
-	margin-right: 50px;
-	position: relative;
-	padding: 4px 0;
-	cursor: pointer;
+#FiltreVente{
+	box-shadow : 2px 2px 5px gainsboro,
+	-2px -2px 5px gainsboro;
+	padding: 20px;
+	border-radius: 5px;
 }
-
-.filter__controls li.active {
-	color: #323232;
+#FiltreVente > input, 
+#FiltreVente > select{
+	border-radius: 10px !important;
 }
-
-.filter__controls li.active:after {
-	opacity: 1;
-}
-
-.filter__controls li:after {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	height: 2px;
-	width: 100%;
-	background: #db2d2e;
-	content: "";
-	opacity: 0;
-}
-
-.filter__controls li:last-child {
-	margin-right: 0;
-}
-
 .car__filter__option {
 	background: #f7f7f7;
 	padding: 12px 30px;
@@ -1054,7 +1025,6 @@ ol {
 	height: 46px;
 	background: #ffffff;
 	line-height: 46px;
-	border-radius: 0;
 	margin-bottom: 10px;
 	float: none;
 }
@@ -1062,7 +1032,6 @@ ol {
 .car__filter form .nice-select .list {
 	width: 100%;
 	margin-top: 0;
-	border-radius: 0;
 }
 
 .car__filter form .nice-select:after {

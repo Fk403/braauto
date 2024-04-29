@@ -28,7 +28,7 @@
 
 <body>
     
-    <div class="container-fluid">
+    <div class="container-fluid" id="VenteIndexPage">
         <!-- Page Preloder -->
         <div id="preloder">
             <div class="loader"></div>
@@ -125,7 +125,7 @@
             </div>
         </section>
         <!--  fin section banner -->
-        <div class="card bg-dark p-2 text-center mt-4">
+        <div class="container-fluid bg-dark p-2 text-center" id="jumbotron">
             <div class="card-body w-80 mx-auto " style="border-radius: 20%;">
                 <h3 class="card-title text-white text-uppercase fs-5">
                     Tout a commence par une idée de créativité
@@ -136,11 +136,11 @@
             </div>
         </div>
         <!-- Affichages des voitures et les filitre-->
-        <div class="row">
+        <div class="row" id="CadreVente">
             <!-- ====filtres==== -->
             <div class=" col-lg-3 col-md-4 col-sm-6">
                 <div class="car__filter">
-                    <form action="#">
+                    <form action="#" id="FiltreVente">
                         <div class="form-group">
                             <label style="font-weight: bolder;padding-top: 25px;"><i class="fas fa-users"
                                     style="color: rgba(74, 13, 23);"></i> Nombre de places</label>
@@ -475,9 +475,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- pagination -->
-        <div class="row mt-2">
+             <!-- pagination -->
+        <div class="row mt-2 mx-auto">
             <div class="col-md-3 offset-md-4">
                 <ul class="pagination">
                     <li class="page-item">
@@ -495,6 +494,8 @@
                 </ul>
             </div>
         </div>
+        </div>
+       
     </div>
 
     <!-- Js Plugins -->
