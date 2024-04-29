@@ -28,7 +28,7 @@
 
 <body>
     
-    <div class="container-fluid">
+    <div class="container-fluid" id="VenteIndexPage">
         <!-- Page Preloder -->
         <div id="preloder">
             <div class="loader"></div>
@@ -44,87 +44,18 @@
                                 <span>Trouvez Votre Voiture de Rêve</span>
                                 <h2>Les Meilleurs marque c'est chez Bra-Auto</h2>
                             </div>
-                            <a href="#" class="primary-btn"><img src="img/wheel.png" alt=""> Test Drive</a>
-                            <a href="#" class="primary-btn more-btn">Learn More</a>
                         </div>
                     </div>
                     <div class="col-lg-5">
                         <div class="hero__tab">
                             <ul class="nav nav-tabs" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Location de
-                                        voiture</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Acheter une
+                                    <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Acheter une
                                         voiture</a>
                                 </li>
                             </ul>
                             <div class="tab-content">
                                 <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                    <div class="hero__tab__form">
-                                        <h2>Trouvez la voiture de vos rêve</h2>
-                                        <form>
-                                            <div class="select-list">
-                                                <div class="select-list-item">
-                                                    <p>l'année</p>
-                                                    <select>
-                                                        <option data-display=" ">Selectionnez l'année</option>
-                                                        <option value="">2020</option>
-                                                        <option value="">2019</option>
-                                                        <option value="">2018</option>
-                                                        <option value="">2017</option>
-                                                        <option value="">2016</option>
-                                                        <option value="">2015</option>
-                                                    </select>
-                                                </div>
-                                                <div class="select-list-item">
-                                                    <p>la marque</p>
-                                                    <select>
-                                                        <option data-display=" ">Selectionnez la marque</option>
-                                                        <option value="">Acura</option>
-                                                        <option value="">Audi</option>
-                                                        <option value="">Bentley</option>
-                                                        <option value="">BMW</option>
-                                                        <option value="">Bugatti</option>
-                                                    </select>
-                                                </div>
-                                                <div class="select-list-item">
-                                                    <p> Modele</p>
-                                                    <select>
-                                                        <option data-display=" ">Selectionnez Modele</option>
-                                                        <option value="">Q3</option>
-                                                        <option value="">A4 </option>
-                                                        <option value="">AVENTADOR</option>
-                                                    </select>
-                                                </div>
-                                                <div class="select-list-item">
-                                                    <p> kilométrage</p>
-                                                    <select>
-                                                        <option data-display=" ">Sélectionnez le kilométrage</option>
-                                                        <option value="">27</option>
-                                                        <option value="">25</option>
-                                                        <option value="">15</option>
-                                                        <option value="">10</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="car-price">
-                                                <p>Échelle prix:</p>
-                                                <div class="price-range-wrap">
-                                                    <div class="price-range"></div>
-                                                    <div class="range-slider">
-                                                        <div class="price-input">
-                                                            <input type="text" id="amount">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <button type="submit" class="site-btn">Rechercher</button>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="tab-pane" id="tabs-2" role="tabpanel">
                                     <div class="hero__tab__form">
                                         <h2>Trouvez la voiture de vos rêve</h2>
                                         <form>
@@ -194,7 +125,7 @@
             </div>
         </section>
         <!--  fin section banner -->
-        <div class="card bg-dark p-2 text-center mt-4">
+        <div class="container-fluid bg-dark p-2 text-center" id="jumbotron">
             <div class="card-body w-80 mx-auto " style="border-radius: 20%;">
                 <h3 class="card-title text-white text-uppercase fs-5">
                     Tout a commence par une idée de créativité
@@ -205,11 +136,11 @@
             </div>
         </div>
         <!-- Affichages des voitures et les filitre-->
-        <div class="row">
+        <div class="row" id="CadreVente">
             <!-- ====filtres==== -->
             <div class=" col-lg-3 col-md-4 col-sm-6">
                 <div class="car__filter">
-                    <form action="#">
+                    <form action="#" id="FiltreVente">
                         <div class="form-group">
                             <label style="font-weight: bolder;padding-top: 25px;"><i class="fas fa-users"
                                     style="color: rgba(74, 13, 23);"></i> Nombre de places</label>
@@ -544,9 +475,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- pagination -->
-        <div class="row mt-2">
+             <!-- pagination -->
+        <div class="row mt-2 mx-auto">
             <div class="col-md-3 offset-md-4">
                 <ul class="pagination">
                     <li class="page-item">
@@ -564,6 +494,8 @@
                 </ul>
             </div>
         </div>
+        </div>
+       
     </div>
 
     <!-- Js Plugins -->
