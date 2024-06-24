@@ -30,3 +30,17 @@ function readURL(input) {
   $('.file-upload-placeholder').bind('dragleave', function () {
     $(this).removeClass('image-dropping');
   });
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var elements = document.querySelectorAll('[data-setbg]');
+    
+    elements.forEach(function (element) {
+        var bg = element.getAttribute('data-setbg');
+        if (bg) {
+            element.style.backgroundImage = 'url(' + bg + ')';
+        } else {
+            console.error('Aucune image spécifiée pour', element);
+        }
+    });
+});

@@ -300,8 +300,6 @@ label {
     color: #fff;
 }
 
-
-
 *,
 ::after,
 ::before {
@@ -348,4 +346,37 @@ a.link_solo_car img {
 
 a.link_solo_car:hover img {
     width: 60px;
+}
+/* mise en forme du breadcrumb  */
+
+.breadcrumb-option {
+    height: 200px;
+    text-align: center;
+    background-image: url('/back_office/img/latest-blog/lb-3.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    position:relative;
+    padding-bottom: 20px;
+}
+
+.breadcrumb__text h2 {
+    margin-top:20px;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+.breadcrumb__links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.breadcrumb__links a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb__links span {
+    color: #ffd700;
 }
